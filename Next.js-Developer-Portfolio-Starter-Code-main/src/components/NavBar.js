@@ -2,6 +2,14 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
+import {
+  DribbbleIcon,
+  GithubIcon,
+  LinkedInIcon,
+  PinterestIcon,
+  TwitterIcon,
+} from "./Icons";
+import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -30,25 +38,52 @@ const NavBar = () => {
         <CustomLink href="/articles" title="Articles" className="mr-4" />
       </nav>
 
-      <nav>
-        <Link href="/" target={"_blank"}>
-          T
-        </Link>
-        <Link href="/" target={"_blank"}>
-          T
-        </Link>
-        <Link href="/" target={"_blank"}>
-          T
-        </Link>
-        <Link href="/" target={"_blank"}>
-          T
-        </Link>
-        <Link href="/" target={"_blank"}>
-          T
-        </Link>
-        <Link href="/" target={"_blank"}>
-          T
-        </Link>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="https://twitter.com"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.1 }}
+          className="w-6 mx-3"
+        >
+          <TwitterIcon />
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.1 }}
+          className="w-6 mx-3"
+        >
+          <GithubIcon />
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.1 }}
+          className="w-6 mx-3"
+        >
+          <LinkedInIcon />
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.1 }}
+          className="w-6 mx-3"
+        >
+          <PinterestIcon />
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.1 }}
+          className="w-6 ml-3"
+        >
+          <DribbbleIcon />
+        </motion.a>
       </nav>
 
       <div className="left-[50%] absolute top-2 translate-x-[-50]">
