@@ -1,16 +1,20 @@
-import React from 'react'
-import AmerLogo from './Icons'
-
+import React from "react";
+import AmerLogo from "./Icons";
+import Link from "next/link";
 
 const HireMe = () => {
   return (
-    <div className='fixed left-4 bottom-4 flex justify-center overflow-hidden'>
-        <div className='flex w-48 h-auto justify-center relative items-center'>
-        <AmerLogo className={"fill-dark animate-spin-slow"}/>
-        </div>
+    <div className="fixed left-4 bottom-4 flex justify-center overflow-hidden">
+      <div className="flex w-48 h-auto justify-center relative items-center">
+        <AmerLogo className={"fill-dark animate-spin-slow"} />
 
+        <Link
+          href={"mailto:varajicamer@gmail.com"}
+          className="flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border border-solid border-dark"
+        >Hire Me</Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default HireMe
+export default HireMe;
