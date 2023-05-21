@@ -21,9 +21,9 @@ export default function Home() {
                 className="w-full h-auto"
               />
             </div>
-            <div className="w-1/2">
-              <h1>- Turning Vision Into Reality With Code And Design. </h1>
-              <AnimatedText />
+            <div className="w-1/2 flex flex-col self-center items-center">
+              <h1> </h1>
+              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left" />
               <p>
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
