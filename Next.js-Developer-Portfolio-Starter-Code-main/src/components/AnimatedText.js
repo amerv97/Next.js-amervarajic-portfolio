@@ -9,6 +9,21 @@ const quote = {
     opacity: 1,
     transition: {
       delay: 0.5,
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const singleWord = {
+  initial: {
+    opacity: 0,
+    y:50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1
     },
   },
 };
@@ -25,7 +40,13 @@ const AnimatedText = ({ text, className = "" }) => {
         animate="animate"
       >
         {text.split(" ").map((word, index) => (
-          <span key={word + "-" + index} className="inline-block ">
+          <span
+            key={word + "-" + index}
+            className="inline-block"
+            variants={singleWord}
+            initial="initial"
+            animate="animate"
+          >
             {word}&nbsp;
           </span>
         ))}
