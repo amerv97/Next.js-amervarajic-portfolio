@@ -12,7 +12,7 @@ const AnimatedNumbers = ({ value }) => {
 
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
@@ -87,14 +87,18 @@ const about = () => {
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <spam className="inline-block text-7xl font-bold"><AnimatedNumbers value={30}/>+</spam>
+                <spam className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={30} />+
+                </spam>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   projects completed
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <spam className="inline-block text-7xl font-bold"><AnimatedNumbers value={2}/>+</spam>
+                <spam className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={2} />+
+                </spam>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   years of experience
                 </h2>
