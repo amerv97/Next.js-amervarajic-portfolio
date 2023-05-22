@@ -1,9 +1,15 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, addres, work }) => {
+  const ref = useRef(null);
   return (
-    <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+    >
+      <LiIcon reference={ref} />
       <div>
         <h3 className="font-bold capitalize text-2xl">
           {position}&nbsp;
@@ -41,7 +47,7 @@ const Experience = () => {
         <div ref={ref} className="w-[75] mx-auto relative">
           <motion.div
             style={{ scaleY: scrollyProgress }}
-            className="absolute left-8 top-0 w-[4px] h-full bg-dark origin-top "
+            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top "
           />
 
           <ul className="w-full flex flex-col items-start justify-between ml-4">
