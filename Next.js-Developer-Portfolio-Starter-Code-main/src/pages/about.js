@@ -1,9 +1,35 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import profilePic from "../../public/images/profile/DSC_0505.JPG";
+
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
-import profilePic from "../../public/images/profile/DSC_0505.JPG";
+import React, { useEffect, useRef } from "react";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+
+const AnimatedNumbers = ({ value }) => {
+  const ref = useRef(null);
+
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, {once: true});
+
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue]);
+
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
+    });
+  }, [springValue, value]);
+
+  return <span ref={ref}></span>;
+};
 
 const about = () => {
   return (
@@ -52,21 +78,23 @@ const about = () => {
 
             <div className="col-span-2 flex flex-col justify-between items-end">
               <div className="flex flex-col items-end justify-center">
-                <spam className="inline-block text-7xl font-bold">50+</spam>
+                <spam className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={100} />+
+                </spam>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   satisfied clients
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <spam className="inline-block text-7xl font-bold">40+</spam>
+                <spam className="inline-block text-7xl font-bold"><AnimatedNumbers value={30}/>+</spam>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   projects completed
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <spam className="inline-block text-7xl font-bold">2+</spam>
+                <spam className="inline-block text-7xl font-bold"><AnimatedNumbers value={2}/>+</spam>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   years of experience
                 </h2>
