@@ -1,6 +1,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import profilePic from "../../public/images/profile/DSC_0505.JPG";
+import Skills from "@/components/Skills";
 
 import Head from "next/head";
 import Image from "next/image";
@@ -105,6 +106,9 @@ const about = () => {
               </div>
             </div>
           </div>
+
+
+          <Skills/>
         </Layout>
       </main>
     </>
