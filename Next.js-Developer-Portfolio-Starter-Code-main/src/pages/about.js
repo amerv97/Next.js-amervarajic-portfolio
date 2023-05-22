@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import profilePic from '../../public/images/profile/DSC_0505.JPG';
+import profilePic from "../../public/images/profile/DSC_0505.JPG";
 
 const about = () => {
   return (
@@ -42,11 +42,35 @@ const about = () => {
             </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
+              <div className="top-0 absolute -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
               <Image
                 src={profilePic}
                 alt="Amer Varajic Profile"
                 className="w-full h-auto rounded-2xl"
               />
+            </div>
+
+            <div className="col-span-2 flex flex-col justify-between items-end">
+              <div className="flex flex-col items-end justify-center">
+                <spam className="inline-block text-7xl font-bold">50+</spam>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  satisfied clients
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center">
+                <spam className="inline-block text-7xl font-bold">40+</spam>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  projects completed
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center">
+                <spam className="inline-block text-7xl font-bold">2+</spam>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  years of experience
+                </h2>
+              </div>
             </div>
           </div>
         </Layout>
