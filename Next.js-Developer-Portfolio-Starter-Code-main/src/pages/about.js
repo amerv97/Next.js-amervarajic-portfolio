@@ -2,12 +2,13 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import profilePic from "../../public/images/profile/DSC_0505.JPG";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-import Experience from "@/components/Experience";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -108,9 +109,9 @@ const about = () => {
             </div>
           </div>
 
-
-          <Skills/>
-          <Experience/>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
