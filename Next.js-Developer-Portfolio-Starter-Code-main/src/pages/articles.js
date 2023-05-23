@@ -1,12 +1,16 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 
-import article1 from "../../public/images//articles/pagination component in reactjs.jpg";
+import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
+import article2 from "../../public/images/articles/create loading screen in react js.jpg";
 
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedArtice = ({ img, title, time, summary, link }) => {
   return (
@@ -15,9 +19,12 @@ const FeaturedArtice = ({ img, title, time, summary, link }) => {
         <Link
           href={link}
           target="_blank"
-          className="w-full cursor-pointer overflow-hidden rounded-lg"
+          className="w-full inline-block cursor-pointer overflow-hidden rounded-lg"
         >
-          <Image src={img} alt={title} className="w-full h-auto"></Image>
+          <FramerImage src={img} alt={title} className="w-full h-auto"
+          whileHover={{scale:1.05}}
+          transition={{duration:0.2}}
+          />
         </Link>
         <Link href={link} target="_blank">
           <h2 className="text-2xl capitalize font-bold my-2 hover:underline">
@@ -56,7 +63,7 @@ const article = () => {
                 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/"
-              img={article1}
+              img={article2}
             />
           </ul>
         </Layout>
