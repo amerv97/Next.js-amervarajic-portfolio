@@ -12,6 +12,8 @@ import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
+
+
 const FeaturedArtice = ({ img, title, time, summary, link }) => {
   return (
     <>
@@ -31,7 +33,7 @@ const FeaturedArtice = ({ img, title, time, summary, link }) => {
           />
         </Link>
         <Link href={link} target="_blank">
-          <h2 className="text-2xl capitalize font-bold my-2 hover:underline">
+          <h2 className="text-2xl capitalize font-bold my-2 mt-4 hover:underline">
             {title}
           </h2>
           <p className="text-sm mb-2">{summary}</p>
@@ -70,6 +72,9 @@ const article = () => {
               img={article2}
             />
           </ul>
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 ">
+            All Articles
+          </h2>
         </Layout>
       </main>
     </>
