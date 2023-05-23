@@ -11,7 +11,8 @@ import Image from "next/image";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="flex w-full items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+    <article className="flex w-full items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+      <div className="top-0 absolute -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl " />
       <Link
         href={link}
         target="_blank"
@@ -50,6 +51,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, github }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+      <div className="top-0 absolute -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl " />
       <Link
         href={link}
         target="_blank"
@@ -99,7 +101,7 @@ const projects = () => {
             text="Imagination Trumps Knowledge!"
           />
 
-          <div className="grid grid-cols-12 gap-24">
+          <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
               <FeaturedProject
                 title="Crypto Screener Application"
