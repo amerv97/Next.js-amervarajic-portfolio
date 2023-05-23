@@ -40,14 +40,14 @@ const article = () => {
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16 " />
           <ul className="grid grid-col-2 gap-16">
-              <FeaturedArtice
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
+            <FeaturedArtice
+              title="Build A Custom Pagination Component In Reactjs From Scratch"
+              summary="Learn how to build a custom pagination component in ReactJS from scratch. 
                 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                time="9 min read"
-                link="/"
-                img={article1}
-              />
+              time="9 min read"
+              link="/"
+              img={article1}
+            />
             <li>Featured article-2</li>
           </ul>
         </Layout>
