@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
 import article2 from "../../public/images/articles/create loading screen in react js.jpg";
+import article3 from "../../public/images/articles/What is Redux with easy explanation.png";
 
 import React from "react";
 import Head from "next/head";
@@ -12,9 +13,18 @@ import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
+const Article = ({ img, title, date, link }) => {
+  return (
+    <li className="w-full relative p-4 py-6 my-4 rounded-xl flex items-center  justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4">
+      <Link href={link} target="_blank">
+        <h2>{title}</h2>
+      </Link>
+      <span>{date}</span>
+    </li>
+  );
+};
 
-
-const FeaturedArtice = ({ img, title, time, summary, link }) => {
+const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
     <>
       <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
@@ -44,7 +54,7 @@ const FeaturedArtice = ({ img, title, time, summary, link }) => {
   );
 };
 
-const article = () => {
+const articles = () => {
   return (
     <>
       <Head>
@@ -55,7 +65,7 @@ const article = () => {
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16 " />
           <ul className="grid grid-cols-2 gap-16">
-            <FeaturedArtice
+            <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
                 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
@@ -63,7 +73,7 @@ const article = () => {
               link="/"
               img={article1}
             />
-            <FeaturedArtice
+            <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
                 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
@@ -75,10 +85,18 @@ const article = () => {
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 ">
             All Articles
           </h2>
+          <ul>
+            <Article
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="May 23, 2023"
+              link="/"
+              img={article3}
+            />
+          </ul>
         </Layout>
       </main>
     </>
   );
 };
 
-export default article;
+export default articles;
