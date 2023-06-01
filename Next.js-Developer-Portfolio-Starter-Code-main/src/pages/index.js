@@ -7,6 +7,7 @@ import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import profilePic1 from '../../public/images/profile/My project.png'
 
 export default function Home() {
   return (
