@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
@@ -33,14 +33,33 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
-
-      <button className="flex flex-col justify-center items-center">
-        <span className="bg-dark dark:bg-light block h-0.5 w-6 rounded-sm -translate-y-0.5"></span>
-        <span className="bg-dark dark:bg-light block h-0.5 w-6 rounded-sm my-0.5"></span>
-        <span className="bg-dark dark:bg-light block h-0.5 w-6 rounded-sm translate-y-0.5"></span>
+      <button
+        className="flex flex-col justify-center items-center"
+        onClick={handleClick}
+      >
+        <span
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${
+            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+          }`}
+        ></span>
+        <span
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+            isOpen ? "opacity-0" : "opacity-100"
+          }`}
+        ></span>
+        <span
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+          }`}
+        ></span>
       </button>
 
       <nav>
