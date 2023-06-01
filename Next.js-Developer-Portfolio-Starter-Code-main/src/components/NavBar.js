@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
@@ -62,73 +62,75 @@ const NavBar = () => {
         ></span>
       </button>
 
-      <nav>
-        <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="/about" title="About" className="mr-4" />
-        <CustomLink href="/projects" title="Project" className="mr-4" />
-        <CustomLink href="/articles" title="Articles" className="mr-4" />
-      </nav>
+      <div className="w-full justify-between items-center lg:hidden">
+        <nav>
+          <CustomLink href="/" title="Home" className="mr-4" />
+          <CustomLink href="/about" title="About" className="mr-4" />
+          <CustomLink href="/projects" title="Project" className="mr-4" />
+          <CustomLink href="/articles" title="Articles" className="mr-4" />
+        </nav>
 
-      <nav className="flex items-center justify-center flex-wrap">
-        <motion.a
-          href="https://twitter.com"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.1 }}
-          className="w-6 mx-3"
-        >
-          <TwitterIcon />
-        </motion.a>
-        <motion.a
-          href="https://twitter.com"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.1 }}
-          className="w-6 mx-3"
-        >
-          <GithubIcon />
-        </motion.a>
-        <motion.a
-          href="https://twitter.com"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.1 }}
-          className="w-6 mx-3"
-        >
-          <LinkedInIcon />
-        </motion.a>
-        <motion.a
-          href="https://twitter.com"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.1 }}
-          className="w-6 mx-3 bg-light rounded-full"
-        >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
-          href="https://twitter.com"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.1 }}
-          className="w-6 ml-3"
-        >
-          <DribbbleIcon />
-        </motion.a>
+        <nav className="flex items-center justify-center flex-wrap">
+          <motion.a
+            href="https://twitter.com"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.1 }}
+            className="w-6 mx-3"
+          >
+            <TwitterIcon />
+          </motion.a>
+          <motion.a
+            href="https://twitter.com"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.1 }}
+            className="w-6 mx-3"
+          >
+            <GithubIcon />
+          </motion.a>
+          <motion.a
+            href="https://twitter.com"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.1 }}
+            className="w-6 mx-3"
+          >
+            <LinkedInIcon />
+          </motion.a>
+          <motion.a
+            href="https://twitter.com"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.1 }}
+            className="w-6 mx-3 bg-light rounded-full"
+          >
+            <PinterestIcon />
+          </motion.a>
+          <motion.a
+            href="https://twitter.com"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.1 }}
+            className="w-6 ml-3"
+          >
+            <DribbbleIcon />
+          </motion.a>
 
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`ml-3 flex items-center justify-center rounded-full p-1 ${
-            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-          }`}
-        >
-          {mode === "dark" ? (
-            <SunIcon className={"fill-dark"} />
-          ) : (
-            <MoonIcon className={"fill-dark"} />
-          )}
-        </button>
-      </nav>
+          <button
+            onClick={() => setMode(mode === "light" ? "dark" : "light")}
+            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+              mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+            }`}
+          >
+            {mode === "dark" ? (
+              <SunIcon className={"fill-dark"} />
+            ) : (
+              <MoonIcon className={"fill-dark"} />
+            )}
+          </button>
+        </nav>
+      </div>
 
       <div className="left-[50%] absolute top-2 translate-x-[-50]">
         <Logo />
