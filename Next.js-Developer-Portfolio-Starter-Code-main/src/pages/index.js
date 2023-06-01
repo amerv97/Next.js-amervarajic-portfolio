@@ -31,7 +31,7 @@ export default function Home() {
               <h1> </h1>
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left"
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl "
               />
               <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
