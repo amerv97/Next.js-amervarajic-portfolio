@@ -42,15 +42,15 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   return (
     <button
       href={href}
-      className={`${className} relative group`}
+      className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={handleClick}
     >
       {title}
 
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
-        } dark:bg-light`}
+        } dark:bg-dark`}
       >
         &nbsp;
       </span>
@@ -167,36 +167,36 @@ const NavBar = () => {
             <CustomMobileLink
               href="/"
               title="Home"
-              className="mr-4"
+              className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/about"
               title="About"
-              className="mr-4"
+              className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
               title="Project"
-              className="mr-4"
+              className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/articles"
               title="Articles"
-              className="mr-4"
+              className=""
               toggle={handleClick}
             />
           </nav>
 
-          <nav className="flex items-center justify-center flex-wrap">
+          <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
               href="https://twitter.com"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.1 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 sm:mx-1"
             >
               <TwitterIcon />
             </motion.a>
@@ -205,7 +205,7 @@ const NavBar = () => {
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.1 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
             >
               <GithubIcon />
             </motion.a>
@@ -214,7 +214,7 @@ const NavBar = () => {
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.1 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 sm:mx-1"
             >
               <LinkedInIcon />
             </motion.a>
@@ -223,7 +223,7 @@ const NavBar = () => {
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.1 }}
-              className="w-6 mx-3 bg-light rounded-full"
+              className="w-6 mx-3 bg-light rounded-full sm:mx-1"
             >
               <PinterestIcon />
             </motion.a>
@@ -232,7 +232,7 @@ const NavBar = () => {
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.1 }}
-              className="w-6 ml-3"
+              className="w-6 ml-3 sm:mx-1"
             >
               <DribbbleIcon />
             </motion.a>
