@@ -60,25 +60,18 @@ const Education = () => {
 
           <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
             <Details
-              type="Bachelor Of Science In Computer Science"
-              time="2016-2020"
-              place="Massachusetts Institute Of Technology (MIT)"
-              info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-              Intelligence."
+              type="Bachelor of Management and IT"
+              time="Oct 2016- Dec 2020"
+              place="School of Economics and Business Sarajevo, University of Sarajevo"
+              info="This qualification has equipped me with a comprehensive understanding of both management principles and information technology, making me a valuable asset in today's rapidly evolving business landscape.
+
+              Throughout my studies, I gained a solid foundation in various areas such as business administration, economics, finance, marketing, and organizational behavior. I also developed a deep understanding of how information technology plays a critical role in enhancing business operations, optimizing decision-making processes, and driving innovation."
             />
             <Details
-              type="Bachelor Of Science In Computer Science"
-              time="2016-2020"
-              place="Massachusetts Institute Of Technology (MIT)"
-              info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-              Intelligence."
-            />
-            <Details
-              type="Bachelor Of Science In Computer Science"
-              time="2016-2020"
-              place="Massachusetts Institute Of Technology (MIT)"
-              info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-              Intelligence."
+              type="Economic technician"
+              time="Sep 2012- May 2016"
+              place="High School Center Vogošća"
+              info="At High School Center Vogošća, I received comprehensive training in various subjects related to economics and business. The curriculum included courses in economics, accounting, finance, marketing, and entrepreneurship, among others. Through theoretical teachings and practical applications, I acquired a solid foundation in the principles and practices of the economic field."
             />
           </ul>
         </div>
