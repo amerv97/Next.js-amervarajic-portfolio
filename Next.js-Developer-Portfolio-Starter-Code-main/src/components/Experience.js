@@ -57,44 +57,33 @@ const Experience = () => {
 
           <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
             <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="www.google.com"
-              time="2022-Present"
-              addres="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+              position="Ankora - Hackathon 2023"
+              company="Ankora.inc"
+              companyLink="https://ankorainc.com"
+              time="March 18-19, 2023"
+              addres="Srđana Aleksića 2, Sarajevo 71000, BIH"
+              work="
+              The goal of that hackathon was to challenge participants to develop innovative solutions using NLP AI's cutting-edge technology that could improve day-to-day processes in IT and make our work more efficient and effective.
+              During this Hackathon, my team and I created a full stack application that we called food-mate. The main task of the application was to generate a diet plan using the ChatGPT API, in such a way that for registered users it would output a seven-day plan, while for users who do not have an account it would output only a one-day plan."
             />
             <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="www.google.com"
-              time="2022-Present"
-              addres="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+              position="Intern"
+              company="Federal Pension and Disability Insurance Institute of Bosnia and Herzegovina"
+              companyLink="https://www.fzmiopio.ba/?lang=ba"
+              time="Jul 2021 - Jul 2022"
+              addres="Ložionička 2, Sarajevo 71000, BIH"
+              work="I performed the function of System Administrator and IT Support. My main role was managing the Domain Controller and Active Directory, as well as configuring computers and other smaller devices.
+              Work on a special web platform used by the Federal Pension and Disability Insurance Institute of Bosnia and Herzegovina called eGop, where I was an administrator."
             />
             <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="www.google.com"
-              time="2022-Present"
-              addres="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-            />
-            <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="www.google.com"
-              time="2022-Present"
-              addres="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+              position="Student Intern"
+              company="UNION Banka"
+              companyLink="https://www.unionbank.ba/"
+              time="Feb 2020 - Apr 2020"
+              addres="Hamdije Kreševljakovića 19, Sarajevo 71000, BIH."
+              work="
+              Assisted on preparing reviewing market analysis and currency rates in banking services. Together with my mentor, I worked on research and monitoring of the currency market, as well as money exchange between banks.
+              "
             />
           </ul>
         </div>
