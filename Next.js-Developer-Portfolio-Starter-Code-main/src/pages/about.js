@@ -9,6 +9,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -41,6 +42,7 @@ const about = () => {
         <title>Amer Varajic | About Page</title>
         <meta name="description" content="description" />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
@@ -53,14 +55,33 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium ">
-                - Dear Sir or Madam, my name is Amer Varajić, I am 26 years old, I was born and I currently live in Sarajevo. I am a highly motivated and qualified recently graduated engineer of management and informatics at the Faculty of Economics of the University of Sarajevo. I am eager to contribute my talents to a thriving organization and collaborate with a team. I have a proven ability to learn quickly while working efficiently, which allows me to gain valuable experience and continuously expand my knowledge.
-                I am an extremely communicative and friendly person, always eager to connect with others. My ability to process information quickly and efficiently allows me to excel at any task. With strong analytical skills, I possess a keen eye for detail and can identify patterns and insights that others may overlook. 
+                - Dear Sir or Madam, my name is Amer Varajić, I am 26 years old,
+                I was born and I currently live in Sarajevo. I am a highly
+                motivated and qualified recently graduated engineer of
+                management and informatics at the Faculty of Economics of the
+                University of Sarajevo. I am eager to contribute my talents to a
+                thriving organization and collaborate with a team. I have a
+                proven ability to learn quickly while working efficiently, which
+                allows me to gain valuable experience and continuously expand my
+                knowledge. I am an extremely communicative and friendly person,
+                always eager to connect with others. My ability to process
+                information quickly and efficiently allows me to excel at any
+                task. With strong analytical skills, I possess a keen eye for
+                detail and can identify patterns and insights that others may
+                overlook.
               </p>
               <p className="font-medium my-4">
-                - I found my passion in mathematics as a boy, I always loved numbers and logic, as well as the field of business. These are actually my biggest reasons for enrolling in the Faculty of Economics.
+                - I found my passion in mathematics as a boy, I always loved
+                numbers and logic, as well as the field of business. These are
+                actually my biggest reasons for enrolling in the Faculty of
+                Economics.
               </p>
               <p className="font-medium ">
-                - IT, as currently the most dynamic branch, has always seemed interesting to me, and in the last year I started programming (mainly in the front-end field, although I also work on the back-end), specifically React.js. I also made a couple of projects, which can be seen on the site.
+                - IT, as currently the most dynamic branch, has always seemed
+                interesting to me, and in the last year I started programming
+                (mainly in the front-end field, although I also work on the
+                back-end), specifically React.js. I also made a couple of
+                projects, which can be seen on the site.
               </p>
             </div>
 
