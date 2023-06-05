@@ -53,23 +53,14 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium ">
-                - Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                - Dear Sir or Madam, my name is Amer Varajić, I am 26 years old, I was born and I currently live in Sarajevo. I am a highly motivated and qualified recently graduated engineer of management and informatics at the Faculty of Economics of the University of Sarajevo. I am eager to contribute my talents to a thriving organization and collaborate with a team. I have a proven ability to learn quickly while working efficiently, which allows me to gain valuable experience and continuously expand my knowledge.
+                I am an extremely communicative and friendly person, always eager to connect with others. My ability to process information quickly and efficiently allows me to excel at any task. With strong analytical skills, I possess a keen eye for detail and can identify patterns and insights that others may overlook. 
               </p>
               <p className="font-medium my-4">
-                - I believe that design is about more than just making things
-                look pretty – it's about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                - I found my passion in mathematics as a boy, I always loved numbers and logic, as well as the field of business. These are actually my biggest reasons for enrolling in the Faculty of Economics.
               </p>
               <p className="font-medium ">
-                - Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                - IT, as currently the most dynamic branch, has always seemed interesting to me, and in the last year I started programming (mainly in the front-end field, although I also work on the back-end), specifically React.js. I also made a couple of projects, which can be seen on the site.
               </p>
             </div>
 
@@ -105,7 +96,7 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <spam className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={2} />+
+                  <AnimatedNumbers value={1} />+
                 </spam>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   years of experience
