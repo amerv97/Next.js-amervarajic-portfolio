@@ -9,8 +9,15 @@ import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import profilePic1 from '../../public/images/profile/My project.png'
 import TransitionEffect from "@/components/TransitionEffect";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter()
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    window.location.href = "mailto:varajicamer@gmail.com"
+  }
   return (
     <>
       <Head>
@@ -59,6 +66,7 @@ export default function Home() {
                   href="mailto:varajicamer@gmail.com"
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
                   md:text-base"
+                  onClick={(e) => handleContactClick(e)}
                 >
                   Contact
                 </Link>
