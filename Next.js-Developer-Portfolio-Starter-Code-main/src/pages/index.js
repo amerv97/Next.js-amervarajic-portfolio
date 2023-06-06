@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
               <Image
-                src={profilePic}
+                src={profilePic1}
                 alt="Amer Varajic"
                 className="w-full h-auto lg:hidden md:inline-block ms:w-full "
                 priority
@@ -67,6 +67,7 @@ export default function Home() {
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
                   md:text-base"
                   onClick={(e) => handleContactClick(e)}
+                  // ! fix later 
                 >
                   Contact
                 </Link>
