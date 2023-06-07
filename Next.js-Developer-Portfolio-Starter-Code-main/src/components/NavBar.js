@@ -3,13 +3,16 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
-  DribbbleIcon,
+  // DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
-  PinterestIcon,
+  // PinterestIcon,
   SunIcon,
   TwitterIcon,
+  // FacebookIcon,
+  FBIcon,
+  IGIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
@@ -131,9 +134,9 @@ const NavBar = () => {
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.1 }}
-            className="w-6 mx-3 bg-light rounded-full"
+            className="w-6 mx-3"
           >
-            <PinterestIcon />
+            <FBIcon />
           </motion.a>
           <motion.a
             href="https://twitter.com"
@@ -142,7 +145,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.1 }}
             className="w-6 ml-3"
           >
-            <DribbbleIcon />
+            <IGIcon />
           </motion.a>
 
           <button
@@ -227,18 +230,18 @@ const NavBar = () => {
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.1 }}
-              className="w-6 mx-3 bg-light rounded-full sm:mx-1"
+              className="w-6 mx-3 sm:mx-1 bg-blue-600"
             >
-              <PinterestIcon />
+              <FBIcon />
             </motion.a>
             <motion.a
               href="https://twitter.com"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.1 }}
-              className="w-6 ml-3 sm:mx-1"
+              className="w-10 mx-3 sm:mx-1 "
             >
-              <DribbbleIcon />
+              <IGIcon />
             </motion.a>
 
             <button
