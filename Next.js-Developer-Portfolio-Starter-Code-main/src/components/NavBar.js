@@ -112,7 +112,7 @@ const NavBar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://github.com/amerv97"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.1 }}
@@ -121,7 +121,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/in/amer-varajic-738179271/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.1 }}
@@ -130,7 +130,7 @@ const NavBar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.facebook.com/amer.varajic"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.1 }}
@@ -139,7 +139,7 @@ const NavBar = () => {
             <FBIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.instagram.com/amervarajic/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.1 }}
