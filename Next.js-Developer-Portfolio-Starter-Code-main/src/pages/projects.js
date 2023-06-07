@@ -2,6 +2,8 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import project11 from "../../public/images/projects/Fearured page 1.jpg"
+import project22 from "../../public/images/projects/Fearured page 2.jpg"
+import project33 from "../../public/images/projects/Featured page 3.jpg"
 
 import { GithubIcon } from "@/components/Icons";
 
@@ -150,38 +152,39 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Travel Advisor Application"
                 img={project11}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
+                summary="Travel advisor is an application that uses: Geolocation, Google Maps API & Google Places API, fetching API data based on the location.
+                Therefore, the purpose of this application is to fetch restaurants, hotels, and attractions that are represented in the requested location.
+                In addition, the application also has a Rating field where we can specify whether we want a hotel, restaurant or attraction with three, four or five stars.
+                The search results are always displayed on the left side in the form of cards, which contain links to the desired destinations"
+                link="https://github.com/amerv97/travel_advisor"
+                github="https://github.com/amerv97/travel_advisor"
                 type="Featured Project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
+                title="Chat GPT-3 Clone"
+                img={project22}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
+                link="https://github.com/amerv97/gpt-3"
+                github="https://github.com/amerv97/gpt-3"
+                type="Project"
               />{" "}
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
+                title="Events Project with Routing"
+                img={project33}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
+                link="https://github.com/amerv97/12-adv-starting-project-routing"
+                github="https://github.com/amerv97/12-adv-starting-project-routing"
+                type="Project"
               />
             </div>
             <div className="col-span-12">
