@@ -6,6 +6,8 @@ import article2 from "../../public/images/articles/create loading screen in reac
 import article3 from "../../public/images/articles/What is Redux with easy explanation.png";
 import article4 from "../../public/images/articles/What is higher order component in React.jpg";
 import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
+import article11 from "../../public/images/articles/8a7f1050-ca1b-44dc-a827-736bc05939e7.jpg";
+import article12 from "../../public/images/articles/e47f5e9e-023c-49cc-b0a6-83e3462ab040.jpg";
 
 import React, { useRef } from "react";
 import Head from "next/head";
@@ -128,13 +130,17 @@ const articles = () => {
             className="grid grid-cols-2 gap-16 lg:gap-8
             md:grid-cols-1 md:gap-y-16"
           >
+            
             <FeaturedArticle
-              title="Build A Custom Pagination Component In Reactjs From Scratch"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+              title="Balkan Championship for children 2023, Bar Montenegro in the role of trainer."
+              summary="I want to highlight this result as one of my greatest successes in the role of coach.
+              My club competed with four competitors, three of them won medals, and two of them even won the title of Balkan champion.
+              The champions of the Balkans were Sara Hukara in the category of girls 13 years old, -49kg and Emir Zundja in the category of boys 12 years old, +52kg.
+              While Amir Zundja settled for third place in the category of boys 11 years +50kg
+              You can see more about this by clicking on the picture."
               time="9 min read"
-              link="/"
-              img={article1}
+              link="https://www.rtvvogosca.ba/jos-jedna-titula-prvaka-balkana-sara-hukara-prvakinja-balkana/"
+              img={article11}
             />
             <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
@@ -142,7 +148,7 @@ const articles = () => {
                 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/"
-              img={article2}
+              img={article12}
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 ">
