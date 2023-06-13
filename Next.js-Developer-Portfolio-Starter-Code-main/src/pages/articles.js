@@ -123,7 +123,7 @@ const articles = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Words Can Change The World!"
+            text="Karate, my life, my passion!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text6xl xs:!text-4xl "
           />
           <ul
@@ -138,17 +138,17 @@ const articles = () => {
               The champions of the Balkans were Sara Hukara in the category of girls 13 years old, -49kg and Emir Zundja in the category of boys 12 years old, +52kg.
               While Amir Zundja settled for third place in the category of boys 11 years +50kg
               You can see more about this by clicking on the picture."
-              time="9 min read"
+              time="3 min read"
               link="https://www.rtvvogosca.ba/jos-jedna-titula-prvaka-balkana-sara-hukara-prvakinja-balkana/"
               img={article11}
             />
             <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-              time="9 min read"
-              link="/"
+              summary="In 2019, at the 21. Balkan Senior Karate Championship in Čačak, Serbia. 
+              I performed in the team composition for the national team of Bosnia and Herzegovina. My team and I achieved an incredible feat. We emerged victorious by defeating Bulgaria in the first match, followed by a win against Serbia, the reigning European vice-champion. In the final match, we triumphed over Turkey, securing the Balkan championship title. Our relentless training, skillful techniques, and unwavering teamwork propelled us to this remarkable victory, leaving an indelible mark in the history of the Bosnian sport."
+              link="https://www.balkankarate.org/wp-content/uploads/2019/04/21st_Balkan_Seniors_Championship_2019-Results.pdf"
               img={article12}
+              time="4 min read"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 ">
