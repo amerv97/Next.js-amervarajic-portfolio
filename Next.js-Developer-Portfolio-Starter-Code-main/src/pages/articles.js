@@ -116,7 +116,7 @@ const articles = () => {
   return (
     <>
       <Head>
-        <title>Amer Varajic | Articles Page</title>
+        <title>Amer Varajic | Karate Page</title>
         <meta name="description" content="any description" />
       </Head>
       <TransitionEffect />
@@ -130,9 +130,8 @@ const articles = () => {
             className="grid grid-cols-2 gap-16 lg:gap-8
             md:grid-cols-1 md:gap-y-16"
           >
-            
             <FeaturedArticle
-              title="Balkan Championship for children 2023, Bar Montenegro in the role of trainer."
+              title="27th Balkan Championship for children 2023, Bar (Montenegro) in the role of trainer."
               summary="I want to highlight this result as one of my greatest successes in the role of coach.
               My club competed with four competitors, three of them won medals, and two of them even won the title of Balkan champion.
               The champions of the Balkans were Sara Hukara in the category of girls 13 years old, -49kg and Emir Zundja in the category of boys 12 years old, +52kg.
@@ -143,7 +142,7 @@ const articles = () => {
               img={article11}
             />
             <FeaturedArticle
-              title="Build A Custom Pagination Component In Reactjs From Scratch"
+              title="21st Balkan Senior Championship 2019, Čačak (Serbia) as a competitor "
               summary="In 2019, at the 21. Balkan Senior Karate Championship in Čačak, Serbia. 
               I performed in the team composition for the national team of Bosnia and Herzegovina. My team and I achieved an incredible feat. We emerged victorious by defeating Bulgaria in the first match, followed by a win against Serbia, the reigning European vice-champion. In the final match, we triumphed over Turkey, securing the Balkan championship title. Our relentless training, skillful techniques, and unwavering teamwork propelled us to this remarkable victory, leaving an indelible mark in the history of the Bosnian sport."
               link="https://www.balkankarate.org/wp-content/uploads/2019/04/21st_Balkan_Seniors_Championship_2019-Results.pdf"
