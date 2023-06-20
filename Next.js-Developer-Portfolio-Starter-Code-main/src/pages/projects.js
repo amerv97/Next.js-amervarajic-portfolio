@@ -1,9 +1,9 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import project11 from "../../public/images/projects/Fearured page 1.jpg"
-import project22 from "../../public/images/projects/Fearured page 2.jpg"
-import project33 from "../../public/images/projects/Featured page 3.jpg"
+
+import project11 from "../../public/images/projects/Fearured page 1.jpg";
+import project22 from "../../public/images/projects/Fearured page 2.jpg";
+import project33 from "../../public/images/projects/Featured page 3.jpg";
 
 import { GithubIcon } from "@/components/Icons";
 
@@ -185,42 +185,6 @@ const projects = () => {
                 link="https://github.com/amerv97/12-adv-starting-project-routing"
                 github="https://github.com/amerv97/12-adv-starting-project-routing"
                 type="Project"
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
               />
             </div>
           </div>
