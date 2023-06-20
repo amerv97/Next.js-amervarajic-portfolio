@@ -1,13 +1,8 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import article2 from "../../public/images/articles/create loading screen in react js.jpg";
-import article3 from "../../public/images/articles/What is Redux with easy explanation.png";
-import article4 from "../../public/images/articles/What is higher order component in React.jpg";
-import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import article11 from "../../public/images/articles/8a7f1050-ca1b-44dc-a827-736bc05939e7.jpg";
-import article12 from "../../public/images/articles/e47f5e9e-023c-49cc-b0a6-83e3462ab040.jpg";
+import pic1 from "../../public/images/articles/8a7f1050-ca1b-44dc-a827-736bc05939e7.jpg";
+import pic2 from "../../public/images/articles/e47f5e9e-023c-49cc-b0a6-83e3462ab040.jpg";
 import tz from "../../public/images/articles/tz.jpg";
 import vienna from "../../public/images/articles/Vienna1.jpg";
 import team from "../../public/images/articles/team.jpg";
@@ -146,14 +141,14 @@ const articles = () => {
               You can see more about this by clicking on the picture."
               time="3 min read"
               link="https://www.rtvvogosca.ba/jos-jedna-titula-prvaka-balkana-sara-hukara-prvakinja-balkana/"
-              img={article11}
+              img={pic1}
             />
             <FeaturedArticle
               title="21st Balkan Senior Championship 2019, Čačak (Serbia) as a competitor "
               summary="In 2019, at the 21. Balkan Senior Karate Championship in Čačak, Serbia. 
               I performed in the team composition for the national team of Bosnia and Herzegovina. My team and I achieved an incredible feat. We emerged victorious by defeating Bulgaria in the first match, followed by a win against Serbia, the reigning European vice-champion. In the final match, we triumphed over Turkey, securing the Balkan championship title. Our relentless training, skillful techniques, and unwavering teamwork propelled us to this remarkable victory, leaving an indelible mark in the history of the Bosnian sport."
               link="https://www.balkankarate.org/wp-content/uploads/2019/04/21st_Balkan_Seniors_Championship_2019-Results.pdf"
-              img={article12}
+              img={pic2}
               time="4 min read"
             />
           </ul>
