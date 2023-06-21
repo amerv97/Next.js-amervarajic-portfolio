@@ -1,45 +1,54 @@
-# Next.Js Website Tutorial: Create a Stunning Portfolio Website with Nextjs, Tailwind CSS and Framer-motion🌟
+# Portfolio Web App
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+This is a portfolio web app built with Next.js 13, showcasing my CV, biography, skills, education, experience, projects, and sports career.
 
-This repository contains starter code for Portfolio website created using NextJs. <br />
-
-For Demo and Final Code checkout following link👇: <br />
-[Nextjs Portfolio Website](https://devdreaming.com//videos/nextjs-tutorial-build-portfolio-tailwind-css-framer-motion) <br />
-
-If you want to learn how to create it please follow below tutorial👇: <br />
-https://youtu.be/Yw7yWHigGKI <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/Yw7yWHigGKI?style=social)](https://youtu.be/Yw7yWHigGKI)<br />
-
-<h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://www.buymeacoffee.com/CodeBucks" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br />
-
-### Images of The Portfolio Website:
-
-![Nextjs Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-light-desktop.png)
-![Nextjs Portfolio Website Dark Mode](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-dark-desktop.png)
-![Next.js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-desktop.png)
-![Next js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-dark-desktop.png)
-![Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-desktop.png)
-![Responsive Portfolio Website In Nextjs](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-mobile.png)
-![Responsive Portfolio Website In Next js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-light-mobile.png)
-![Mobile Responsive Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-mobile.png)
+![Alt text](<Screenshot (97).png>)
+![Alt text](<Screenshot (98).png>) ![Alt text](<Screenshot (99).png>) ![Alt text](<Screenshot (100).png>) ![Alt text](<Screenshot (101).png>)
 
 
-### Resources Used in This Project
 
-- Profile image in the home page created by using https://www.midjourney.com/ tool.
-- Profile image in the about page by [Albert Dera](https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
-on [Unsplash](https://unsplash.com/photos/ILip77SbmOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-- Fonts from https://fonts.google.com/ <br />
-- Icons from https://iconify.design/ <br />
-- LightBulb Svg from https://lukaszadam.com/illustrations <br />
+## Getting Started
 
-### External Libraries used in this project:
+To get started with this project, follow these steps:
 
-- [framer-motion](https://www.framer.com/motion/) <br />
-- [Tailwind css](https://tailwindcss.com/) <br />
+1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git`
+2. Navigate to the project directory: `cd your-portfolio`
+3. Install dependencies: `npm install` or `yarn install`
+4. Start the development server: `npm run dev` or `yarn dev`
+5. Open your browser and visit `http://localhost:3000` to view the app.
+
+Feel free to customize the app according to your preferences. Modify the pages, components, and styles to make it your own.
+
+## Contributing
+
+If you would like to contribute to this project, you can follow these steps:
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b my-new-feature`
+3. Make your changes and commit them: `git commit -am 'Add some feature'`
+4. Push the changes to your forked repository: `git push origin my-new-feature`
+5. Submit a pull request describing your changes.
 
 
+## External Libraries
+
+The following external libraries were used in this project:
+
+- [Framer Motion](https://www.framer.com/motion/): A library for creating animations and interactive user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for building responsive web interfaces.
+
+## Fonts
+
+Fonts used in this project are from [Google Fonts](https://fonts.google.com/). Make sure to include the necessary font stylesheets in your HTML files.
+
+## Icons
+
+Icons used in this project are from [Iconify](https://iconify.design/). You can browse their collection and use the icons by following their documentation.
+
+## LightBulb SVG
+
+The LightBulb SVG used in this project is from [Lukasz Adam](https://lukaszadam.com/illustrations). Make sure to comply with the licensing requirements specified by the author when using the SVG in your project.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
