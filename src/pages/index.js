@@ -67,7 +67,7 @@ export default function Home() {
                   className="ml-4 text-lg font-medium text-dark underline dark:text-light
                   md:text-base"
                   onClick={(e) => handleContactClick(e)}
-                  // ! fix later 
+                  // ! fix later with mailbox
                 >
                   varajicamer@gmail.com
                 </Link>
