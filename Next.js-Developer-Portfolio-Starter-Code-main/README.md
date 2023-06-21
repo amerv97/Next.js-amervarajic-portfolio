@@ -2,10 +2,10 @@
 
 This is a portfolio web app built with Next.js 13, showcasing my CV, biography, skills, education, experience, projects, and sports career.
 
-![Alt text](<Screenshot (97).png>)
-![Alt text](<Screenshot (98).png>) ![Alt text](<Screenshot (99).png>) ![Alt text](<Screenshot (100).png>) ![Alt text](<Screenshot (101).png>)
-
-
+![Alt text](<Screenshot (102) - Edited.png>)
+![Alt text](<Screenshot (98) - Edited.png>)
+![Alt text](<Screenshot (99) - Edited.png>)
+![Alt text](<Screenshot (101) - Edited.png>) ![Alt text](<Screenshot (100)-1.png>)
 
 ## Getting Started
 
@@ -28,7 +28,6 @@ If you would like to contribute to this project, you can follow these steps:
 3. Make your changes and commit them: `git commit -am 'Add some feature'`
 4. Push the changes to your forked repository: `git push origin my-new-feature`
 5. Submit a pull request describing your changes.
-
 
 ## External Libraries
 
