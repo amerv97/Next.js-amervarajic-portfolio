@@ -2,10 +2,10 @@
 
 This is a portfolio web app built with Next.js 13, showcasing my CV, biography, skills, education, experience, projects, and sports career.
 
-![Alt text](<Screenshot (102) - Edited.png>)
-![Alt text](<Screenshot (98) - Edited.png>)
-![Alt text](<Screenshot (99) - Edited.png>)
-![Alt text](<Screenshot (101) - Edited.png>) ![Alt text](<Screenshot (100)-1.png>)
+![Alt text](<readme/Screenshot (102) - Edited.png>)
+![Alt text](<readme/Screenshot (98) - Edited.png>)
+![Alt text](<readme/Screenshot (100)-1.png>)
+![Alt text](<readme/Screenshot (101) - Edited.png>)
 
 ## Getting Started
 
